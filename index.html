@@ -6,58 +6,86 @@
     <meta name="keywords" content="Anastasia, cv, resume">
     <meta name="description" content="Это сайт - резуме.">
     <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <img src="img/avatar.png" alt="avatar" width="150">
-    <h1>Родионова Анастасия</h1>
-    <p>Я работаю <strong>Backend - разработчиком.</strong></p>
-    <p>Люблю смотреть <em>сериалы, гулять и программировать</em></p>
-
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Сериалы</li>
-        <li>Программирование</li>
-        <li>Пить кофе</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ОБУ "ИТЦ"</td>
-                <td>Backend - разработчик</td>
-                <td>2023 - по н. вр.</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="conteiner">
+        <div class="info">
+            <img src="img/avatar.png" alt="avatar" class="avatar">
+            <div class="info-details">
+                <div class="info-details-text">
+                    <h1>Родионова Анастасия</h1>
+                    <p>Я работаю Backend - разработчиком.</p>
+                    <p>Люблю смотреть сериалы, гулять и программировать.</p>
+                </div>
+                <div class="info-details-link">
+                    <h4>Спосок социальных сетей:</h4>
+                    <ul>
+                        <li><a href="https://vk.com/idanastatha" target="_blank">VK</a></li>
+                        <li><a href="https://ru.pinterest.com/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="email">Выш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+    
+        <div class="card">
+            <h2>Мои хобби:</h2>
+            <ol class="list">
+                <li>Сериалы</li>
+                <li>Программирование</li>
+                <li>Пить кофе</li>
+            </ol>
         </div>
-        <div>
-            <label for="message">Выше сообщение:</label>
-            <br>
-            <textarea name="message" id="message" placeholder="Введите сообщение..." cols="20" rows="5"></textarea>
+    
+        <div class="card">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>ОБУ "ИТЦ"</td>
+                        <td>Backend - разработчик</td>
+                        <td>2023 - по н. вр.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <input type="submit" value="Отправить!">
-    </form>
-    <h4>Спосок социальных сетей:</h4>
-    <a href="https://vk.com/idanastatha" target="_blank">VK</a>
-    |
-    <a href="https://ru.pinterest.com/" target="_blank">Instagram</a>
+    
+        <div class="card">
+            <h2>Мои курсы:</h2>
+            <ul class="link-list">
+                <li><a href="https://vk.com/idanastatha" target="_blank">Профессия Джуниор Frontend-разработчик</a></li>
+            </ul>
+        </div>
+    
+            <form class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Выш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Выше сообщение:</label>
+                    <textarea name="message" id="message" placeholder="Введите сообщение..." cols="20" rows="5"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Отправить!">
+            </form>
+    
+    </div>
 </body>
 </html>
